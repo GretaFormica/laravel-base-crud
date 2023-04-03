@@ -12,6 +12,11 @@ use App\Http\Controllers\PageController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+*/ 
 
-Route::get('/', [Pagecontroller::class, 'music']);  
+Route::resource('music', Pagecontroller::class);
+
+Route::get('music', [Pagecontroller::class, 'index']);
+
+
+
