@@ -18,5 +18,9 @@ Route::resource('music', Pagecontroller::class);
 
 Route::get('music', [Pagecontroller::class, 'index']);
 
+Route::get('/music/create', [PageController::class, 'create']);
+
+Route::post('music', [PageController::class, 'store']);
+
 
 

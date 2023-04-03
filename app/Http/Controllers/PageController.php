@@ -25,7 +25,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -36,7 +36,18 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $user_music = new Music;
+
+        $user_music->title = $data['title'];
+        $user_music->album = $data['album'];
+        $user_music->author = $data['author'];
+        $user_music->editor = $data['editor'];
+        $user_music->length = $data['length'];
+        $user_music->poster = 'https://picsum.photos/200/300';
+    
+        $user_music->save();
     }
 
     /**
