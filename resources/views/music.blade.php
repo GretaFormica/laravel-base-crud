@@ -15,7 +15,7 @@
         <a href="/music/create" class="btn btn-primary my-5">create music</a>
     
         <div class="row">
-    
+    \
             
             @foreach($music as $music)
             
@@ -27,7 +27,7 @@
                         <h5 class="card-title">Editor: {{ $music->editor}}</h5>
                         <h5 class="card-title">Durata: {{ $music->length}}</h5>
                         <h5 class="card-title">Poster: {{ $music->poster}}</h5>
-                        <a href="{{ route('music.show', ['music' => $music])}}">dettaglio</a>
+                        {{-- <a href="{{ route('music.show', ['music' => $music])}}">dettaglio</a> --}}
                         
                     </div>
                 </div>

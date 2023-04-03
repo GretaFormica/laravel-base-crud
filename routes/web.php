@@ -14,13 +14,13 @@ use App\Http\Controllers\PageController;
 |
 */ 
 
-Route::resource('music', Pagecontroller::class);
+// Route::resource('music', Pagecontroller::class);
 
 Route::get('music', [Pagecontroller::class, 'index']);
 
 Route::get('/music/create', [PageController::class, 'create']);
 
-Route::post('music', [PageController::class, 'store']);
+Route::post('music', [PageController::class, 'store'])->name('music.store');
 
 
 

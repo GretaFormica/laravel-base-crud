@@ -17,32 +17,32 @@
 
                 <div class="form-group col-md-6">
                     <label for="title">Titolo</label>
-                    <input type="text" class="form-control" id="title">
+                    <input type="text" class="form-control" id="title" name="title">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="album">Album</label>
-                    <input type="text" class="form-control" id="album">
+                    <input type="text" class="form-control" id="album" name="album">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="author">Autore</label>
-                    <input type="text" class="form-control" id="author">
+                    <input type="text" class="form-control" id="author" name="author">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="editor">Editor</label>
-                    <input type="text" class="form-control" id="editor">
+                    <input type="text" class="form-control" id="editor" name="editor">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="length">Durata</label>
-                    <input type="number" class="form-control" id="length">
+                    <input type="number" class="form-control" id="length" name="length">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="poster">Poster</label>
-                    <input type="text" class="form-control" id="poster">
+                    <input type="text" class="form-control" id="poster" name="poster">
                 </div>
 
                 
