@@ -20,6 +20,10 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Titolo: {{ $music->title}}</h5>
+                        <h5 class="card-title">Album: {{ $music->album}}</h5>
+                        <h5 class="card-title">Autore: {{ $music->author}}</h5>
+                        <h5 class="card-title">Editor: {{ $music->editor}}</h5>
+                        <h5 class="card-title">Durata: {{ $music->length}}</h5>
                         
                     </div>
                 </div>
