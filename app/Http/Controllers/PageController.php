@@ -47,7 +47,7 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        //
+        var_dump($id);
     }
 
     /**

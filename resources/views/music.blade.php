@@ -24,6 +24,7 @@
                         <h5 class="card-title">Autore: {{ $music->author}}</h5>
                         <h5 class="card-title">Editor: {{ $music->editor}}</h5>
                         <h5 class="card-title">Durata: {{ $music->length}}</h5>
+                        <a href="{{ route('music.show', ['music' => $music])}}">dettaglio</a>
                         
                     </div>
                 </div>
