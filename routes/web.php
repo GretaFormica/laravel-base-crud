@@ -14,13 +14,17 @@ use App\Http\Controllers\PageController;
 |
 */ 
 
-// Route::resource('music', Pagecontroller::class);
+Route::resource('music', Pagecontroller::class);
 
-Route::get('music', [Pagecontroller::class, 'index']);
+// Route::get('music', [Pagecontroller::class, 'index']);
 
-Route::get('/music/create', [PageController::class, 'create']);
+// Route::get('/music/{music}', [PageController::class, 'show'])->name('music.show');
 
-Route::post('music', [PageController::class, 'store'])->name('music.store');
+// Route::get('/music/create', [PageController::class, 'create'])->name('music.create');
 
+// Route::post('music', [PageController::class, 'store'])->name('music.store'); //post per inviare
 
+// Route::get('/music/{music}/edit', [PageController::class, 'edit'])->name('music.edit'); //get per ricevere
+
+// Route::put('/music/{music}/update', [PageController::class, 'update'])->name('music.update'); //put per la modifica 
 

@@ -15,7 +15,7 @@ class PageController extends Controller
     public function index()
     {
         $music = Music::all();
-        return view('music', compact('music'));
+        return view('music.index', compact('music'));
     }
 
     /**
@@ -25,7 +25,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        return view('create');
+        return view('music.create');
     }
 
     /**
@@ -38,16 +38,18 @@ class PageController extends Controller
     {
         $data = $request->all();
 
-        $user_music = new Music;
+        $music = new Music;
 
-        $user_music->title = $data['title'];
-        $user_music->album = $data['album'];
-        $user_music->author = $data['author'];
-        $user_music->editor = $data['editor'];
-        $user_music->length = $data['length'];
-        $user_music->poster = 'https://picsum.photos/200/300';
+        $music->title = $data['title'];
+        $music->album = $data['album'];
+        $music->author = $data['author'];
+        $music->editor = $data['editor'];
+        $music->length = $data['length'];
+        $music->poster = 'https://picsum.photos/200/300';
     
-        $user_music->save();
+        $music->save();
+
+        return redirect()->route('music.show', ['music' => $music->id]);
     }
 
     /**
@@ -67,9 +69,9 @@ class PageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Music $music)
     {
-        //
+        return view('music.edit', compact('music'));
     }
 
     /**
@@ -79,9 +81,15 @@ class PageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Music $music)
     {
-        //
+        $data = $request->all();
+
+        $music->update($data);
+
+        return redirect()->route('music.show', ['music' => $music->id]);
+
+
     }
 
     /**

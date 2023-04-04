@@ -19,16 +19,16 @@ class MusicSeeder extends Seeder
     {
         for($i=0; $i<100; $i++) {
 
-            $new_music = new Music;
+            $music = new Music;
     
-            $new_music->title = $faker->word();
-            $new_music->album = $faker->word();
-            $new_music->author = $faker->word();
-            $new_music->editor = $faker->word();
-            $new_music->length = $faker->randomDigit();
-            $new_music->poster = 'https://picsum.photos/200/300';
+            $music->title = $faker->word();
+            $music->album = $faker->word();
+            $music->author = $faker->word();
+            $music->editor = $faker->word();
+            $music->length = $faker->randomDigit();
+            $music->poster = 'https://picsum.photos/200/300';
     
-            $new_music->save();
+            $music->save();
         }
     }
 }

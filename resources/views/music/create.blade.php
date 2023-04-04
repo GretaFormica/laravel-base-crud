@@ -17,32 +17,56 @@
 
                 <div class="form-group col-md-6">
                     <label for="title">Titolo</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" 
+                           class="form-control" 
+                           id="title" 
+                           name="title"
+                           value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="album">Album</label>
-                    <input type="text" class="form-control" id="album" name="album">
+                    <input type="text" 
+                           class="form-control" 
+                           id="album" 
+                           name="album"
+                           value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="author">Autore</label>
-                    <input type="text" class="form-control" id="author" name="author">
+                    <input type="text" 
+                           class="form-control" 
+                           id="author" 
+                           name="author"
+                           value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="editor">Editor</label>
-                    <input type="text" class="form-control" id="editor" name="editor">
+                    <input type="text" 
+                           class="form-control" 
+                           id="editor" 
+                           name="editor"
+                           value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="length">Durata</label>
-                    <input type="number" class="form-control" id="length" name="length">
+                    <input type="number" 
+                           class="form-control" 
+                           id="length" 
+                           name="length"
+                           value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="poster">Poster</label>
-                    <input type="text" class="form-control" id="poster" name="poster">
+                    <input type="text" 
+                           class="form-control" 
+                           id="poster" 
+                           name="poster"
+                           value="{{ old('title') }}">
                 </div>
 
                 
