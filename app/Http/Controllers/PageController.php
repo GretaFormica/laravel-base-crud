@@ -49,7 +49,7 @@ class PageController extends Controller
     
         $music->save();
 
-        return redirect()->route('music.show', ['music' => $music->id]);
+        return redirect()->route('music.index');
     }
 
     /**
@@ -87,7 +87,7 @@ class PageController extends Controller
 
         $music->update($data);
 
-        return redirect()->route('music.show', ['music' => $music->id]);
+        return redirect()->route('music.index');
 
 
     }
